@@ -19,7 +19,7 @@
       </li>
       </li>
         <li class="nav-item{{ $activePage == 'typography' ? ' active' : '' }}">
-          <a class="nav-link" href="#">
+          <a class="nav-link" href="usuarios">
             <i class="material-icons">person</i>
               <p>{{ __('Usuarios') }}</p>
           </a>
