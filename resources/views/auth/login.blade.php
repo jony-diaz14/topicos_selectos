@@ -4,7 +4,7 @@
     <div class="container" style="height: auto;">
         <div class="row align-items-center">
             <div class="col-md-9 ml-auto mr-auto mb-3 text-center">
-                <h3>{{ __('Log in to see how you can speed up your web development with out of the box CRUD for #User Management and more.') }}
+                <h3>{{ __('Inicie sesión para ver cómo puede acelerar su desarrollo web con CRUD listo para usar para Administración de #usuarios y más.') }}
                 </h3>
             </div>
             <div class="col-lg-4 col-md-6 col-sm-8 ml-auto mr-auto">
