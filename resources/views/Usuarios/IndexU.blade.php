@@ -45,6 +45,8 @@
                                                     <td></td>
                                                     <td class="td-actions text-right">
 
+                                                        <a href="#"class="btn btn-info"><i class="material-icons">person</i></a>
+                                                        <a href="#" class="btn btn-warning"><i class="material-icons">edit</i></a>
 
                                                         <form action="#" method="POST" style="display:inline-block;">
                                                             @csrf
