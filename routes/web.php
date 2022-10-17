@@ -25,4 +25,5 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 Route::get('/usuarios',[App\Http\Controllers\UserController::class, 'index'])->name('Usuarios.index');
 Route::get('/usuarios/crear',[App\Http\Controllers\UserController::class, 'create'])->name('Usuarios.create');
 Route::post('/usuarios/crear',[App\Http\Controllers\UserController::class, 'store'])->name('Usuarios.store');
+Route::post('/usuarios/{user}',[App\Http\Controllers\UserController::class, 'show'])->name('Usuarios.show');
 
