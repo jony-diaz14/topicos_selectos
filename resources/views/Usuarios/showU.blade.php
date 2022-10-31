@@ -41,7 +41,7 @@
                                                 <div class="card-footer">
 
                                                     <div class="button-container">
-                                                        <a href="{{ route('usuarios.index') }}">
+                                                        <a href="{{ route('Usuarios.index') }}">
                                                             <button class="btn btn-sm">Regresar</button> </a>
                                                     </div>
                                                     <div class="button-container">

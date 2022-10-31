@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\User;
+use GrahamCampbell\ResultType\Success;
 use Illuminate\Http\Request;
 
 use function Ramsey\Uuid\v1;
@@ -16,8 +17,8 @@ class UserController extends Controller
      */
     public function index()
     {
-        $user = User::paginate(5);
-        return view('Usuarios.IndexU', compact('user'));
+        $users = User::paginate(5);
+        return view('Usuarios.IndexU', compact('users'));
     }
 
     /**
@@ -49,7 +50,7 @@ class UserController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function show(User $user)
     {
         //
         return view('Usuarios.showU', compact('user'));
@@ -84,8 +85,10 @@ class UserController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
+    public function destroy(User $user)
     {
         //
+        $user -> delete(0);
+        return back()->with('success','Usuario Eliminado Correctamente');
     }
 }

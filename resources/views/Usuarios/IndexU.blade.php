@@ -43,9 +43,10 @@
                                                     <td>{{ $user->id}} </td>
                                                     <td>{{ $user-> name}}</td>
                                                     <td>{{ $user-> email}}</td>
+                                                    <td>{{ $user-> created_at}}</td>
                                                     <td class="td-actions text-right">
 
-                                                        <a href="{{ route('usuarios.show', $user->id) }}"class="btn btn-info"><i class="material-icons">person</i></a>
+                                                        <a href="{{ route('Usuarios.showU', $user->id) }}"class="btn btn-info"><i class="material-icons">person</i></a>
                                                         <a href="#" class="btn btn-warning"><i class="material-icons">edit</i></a>
 
                                                         <form action="#" method="POST" style="display:inline-block;">
